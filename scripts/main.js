@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const name = params.get('n')
   const invitationSubtitle = document.querySelector('.invitation__subtitle')
   const invitationTitle = document.querySelector('.invitation__title')
-  const invitationPronoun = document.querySelector(
+  const invitationPronouns = document.querySelectorAll(
     '.invitation__description-pronoun'
   )
   const invitationDescription = document.querySelector(
@@ -60,7 +60,9 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (['KS', 'KBA', 'VV', 'VPS', 'VPZ', 'KAL', 'VS'].indexOf(name) !== -1) {
-    invitationPronoun.textContent = 'тебе'
+    invitationPronouns.forEach(pronoun => {
+      pronoun.textContent = 'тебе'
+    })
   }
 
   invitationTitle.innerText = data[name] || 'Гості'
