@@ -27,10 +27,7 @@ const data = {
   KBD: 'Бабуся та Дідусь'
 }
 
-alert(`test ${data.VS}`)
-
 document.addEventListener('DOMContentLoaded', function () {
-  alert(`ca ${data.VS}`)
   const params = new URLSearchParams(document.location.search)
   const name = params.get('n')
   const invitationSubtitle = document.querySelector('.invitation__subtitle')
