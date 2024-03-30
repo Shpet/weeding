@@ -73,11 +73,15 @@ p {
   background-color: rgb(254, 248, 254);
   overflow-y: auto;
   overflow-x: hidden;
+  scroll-snap-type: y proximity;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 .container::-webkit-scrollbar {
   display: none;
+}
+.container > div {
+  scroll-snap-align: start;
 }
 .container > * {
   min-height: 80vh;
@@ -85,6 +89,7 @@ p {
 }
 @media screen and (max-width: 767px) {
   .container {
+    scroll-snap-type: none;
     border-radius: 0;
     height: 100vh;
     max-height: 100vh;
@@ -92,9 +97,11 @@ p {
     width: 100%;
     border: none;
   }
-  .container > * {
-    min-height: 100vh;
-    max-height: 100vh;
+  .container > *:not(.hero) {
+    min-height: -moz-max-content;
+    min-height: max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
   }
 }
 @media screen and (max-height: 625px) {
