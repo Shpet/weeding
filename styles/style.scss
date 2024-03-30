@@ -104,14 +104,15 @@ p {
     width: 100%;
     border: none;
 
-    &> .hero{
-      min-height: 100vh;
-      max-height: 100vh;
-    }
-
-    & > *:not(.hero) {
+    & > * {
       min-height: max-content;
       max-height: max-content;
+    }
+
+    & > .hero,
+    & > .tables {
+      min-height: 100vh;
+      max-height: 100vh;
     }
   }
 
