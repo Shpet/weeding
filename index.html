@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Весільне запрошення</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#136d08">
+  <meta name="msapplication-TileColor" content="#136d08">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Marck+Script&family=Nunito:wght@200..1000&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/style.css" />
+
+  <script type="module" src="./scripts/main.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="hero">
+      <picture>
+        <source srcset="./images/hero.webp" type="image/webp" />
+        <img class="hero__image" src="./images/hero.webp" alt="Вадим та Катерина" height="735" width="384"
+          loading="lazy" />
+      </picture>
+      <h1 class="hero__title">
+        <p>Вадим</p>
+        <p>&</p>
+        <p>Катерина</p>
+      </h1>
+    </div>
+
+    <div class="invitation">
+      <h3 class="invitation__subtitle">Дорогі</h3>
+      <h2 class="invitation__title">Гості</h2>
+      <p class="invitation__description">
+        Щиро запрошуємо <span class="invitation__description-pronoun">вас</span> на свято, присвячене створенню нашої
+        сім'ї, яке
+        відбудеться:
+      </p>
+
+      <div class="invitation__calendar">
+        <div class="invitation__calendar-header">Вересень 2024</div>
+        <div class="invitation__calendar-content">
+          <span class="ch">Пн</span><span class="ch">Вт</span><span class="ch">Ср</span><span class="ch">Чт</span><span
+            class="ch">Пт</span><span class="ch">Сб</span><span
+            class="ch">Нд</span></span><span><span>2</span></span><span><span>3</span></span><span><span>4</span></span><span><span>5</span></span><span><span>6</span></span><span><span>7</span></span><span><span>8</span></span><span><span>9</span></span><span><span>10</span></span><span><span>11</span></span><span><span>12</span></span><span><span
+              class="invitation__calendar--active">13</span></span><span><span>14</span></span><span><span>15</span></span><span><span>16</span></span><span><span>17</span></span><span><span>18</span></span><span><span>19</span></span><span><span>20</span></span><span><span>21</span></span><span><span>22</span></span><span><span>23</span></span><span><span>24</span></span><span><span>25</span></span><span><span>26</span></span><span><span>27</span></span><span><span>28</span></span><span><span>29</span></span><span><span>30</span></span>
+        </div>
+      </div>
+
+      <div class="invitation__description">
+        І МИ НЕ УЯВЛЯЄМО ЦЕЙ РАДІСНИЙ ДЕНЬ БЕЗ ВАС
+      </div>
+    </div>
+
+    <div class="place">
+      <div class="place__image">
+        <img src="./images/place.webp" alt="Місце" loading="lazy" />
+      </div>
+
+      <div class="place__description">
+        <div class="place__item">
+          <h3 class="place__item-title">Церемонія</h3>
+          <p class="place__item-text">Палац одружень</p>
+          <p class="place__item-text">
+            вулиця Кафедральна, 1,<br />
+            Житомир
+          </p>
+          <p class="place__item-text">Початок о <b>13:00</b></p>
+
+          <a href="https://maps.app.goo.gl/RQ12xPvjhP8e2gWf9" target="_blank" rel="nofollow" class="place__item-link">
+            Знайти на мапі</a>
+        </div>
+
+        <div class="place__item">
+          <h3 class="place__item-title">БЕНКЕТ</h3>
+          <p class="place__item-text">Bermud</p>
+          <p class="place__item-text">
+            вулиця Моторна, 8,<br />
+            Новогуйвинське
+          </p>
+          <p class="place__item-text">Початок о <b>14:00</b></p>
+          <a href="https://maps.app.goo.gl/2W2fyPMaaQn7yvkB9" target="_blank" rel="nofollow" class="place__item-link">
+            Знайти на мапі</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tables">
+      <h3 class="tables__subtitle">Ваше місце</h3>
+      <h2 class="tables__title">За столом №1</h2>
+
+      <div class="tables__map">
+        <div class="tables__table tables__table--weeding"></div>
+        <div class="tables__table tables__table--one">1</div>
+        <div class="tables__table tables__table--two">2</div>
+      </div>
+
+      <div class="tables__text">
+        Детальніша розсадка гостей відбуватиметься у закладі. Шукайте свої
+        ініціали на відповідному столі.
+      </div>
+
+      <div class="tables__countdown">
+        <div class="tables__countdown-item">
+          <span class="tables__countdown-days">00</span>
+          <span class="tables__countdown-text">Дн.</span>
+        </div>
+        <div class="tables__countdown-item">
+          <span class="tables__countdown-hours">00</span>
+          <span class="tables__countdown-text">Год.</span>
+        </div>
+        <div class="tables__countdown-item">
+          <span class="tables__countdown-minutes">00</span>
+          <span class="tables__countdown-text">Хв.</span>
+        </div>
+        <div class="tables__countdown-item">
+          <span class="tables__countdown-seconds">00</span>
+          <span class="tables__countdown-text">Сек.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
