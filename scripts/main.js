@@ -1,6 +1,7 @@
 import data from '../data.json' with { type: 'json' };
 import { countdown } from './countdown.js'
 import { setTableTexts } from './setTableTexts.js'
+alert(`test ${data.VS}`)
 
 document.addEventListener('DOMContentLoaded', function () {
   alert(`ca ${data.VS}`)
