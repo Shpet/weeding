@@ -73,15 +73,11 @@ p {
   background-color: rgb(254, 248, 254);
   overflow-y: auto;
   overflow-x: hidden;
-  scroll-snap-type: y proximity;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 .container::-webkit-scrollbar {
   display: none;
-}
-.container > div {
-  scroll-snap-align: start;
 }
 .container > * {
   min-height: 80vh;
@@ -97,8 +93,8 @@ p {
     border: none;
   }
   .container > * {
-    min-height: 100vh;
-    max-height: 100vh;
+    min-height: calc(100vh - 40px);
+    max-height: calc(100vh - 40px);
   }
 }
 @media screen and (max-height: 625px) {
