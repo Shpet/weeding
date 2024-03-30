@@ -429,7 +429,6 @@ p {
     margin-top: 20px;
     padding: 10px 20px;
     display: flex;
-    gap: 20px;
     justify-content: center;
     align-items: center;
     font-size: 48px;
@@ -438,8 +437,13 @@ p {
     border-radius: 10px;
 
     &-item {
+      margin-right: 16px;
       display: flex;
       flex-direction: column;
+    }
+
+    &-item:last-child {
+      margin-right: 0;
     }
 
     &-text {
