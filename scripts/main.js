@@ -3,7 +3,7 @@ import { countdown } from './countdown.js'
 import { setTableTexts } from './setTableTexts.js'
 
 document.addEventListener('DOMContentLoaded', function () {
-  alert('ok', data.VS)
+  alert(`ca ${data.VS}`)
   const params = new URLSearchParams(document.location.search)
   const name = params.get('n')
   const invitationSubtitle = document.querySelector('.invitation__subtitle')
