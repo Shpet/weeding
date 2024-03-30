@@ -1,6 +1,32 @@
-import data from '../data.json' with { type: 'json' };
 import { countdown } from './countdown.js'
 import { setTableTexts } from './setTableTexts.js'
+
+const data = {
+  KAL: 'Алла',
+  VS: 'Сергій',
+
+  KB: 'Батьки нареченої',
+  VB: 'Батьки нареченого',
+  VD: 'дядько Віталій',
+  VH: 'Хрещений та Хрещена',
+  VH1: 'Хрещена та Хрещений',
+  KT: 'тітко Ольга',
+  VP: 'Світлана та Франц',
+
+  VN: "сім'я Носенко",
+  KD: 'Дівки',
+  OAD: 'Дмитро та Анастасія',
+  VV: 'Вадим',
+  KS: 'Сестричка',
+  KBA: 'Андрій',
+  VPS: 'Санька',
+  VPZ: 'Женя',
+
+  KA: 'Аня',
+  KO: 'дядько Саша',
+  KBD: 'Бабуся та Дідусь'
+}
+
 alert(`test ${data.VS}`)
 
 document.addEventListener('DOMContentLoaded', function () {
