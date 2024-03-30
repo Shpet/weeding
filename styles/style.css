@@ -97,6 +97,10 @@ p {
     width: 100%;
     border: none;
   }
+  .container > .hero {
+    min-height: 100vh;
+    max-height: 100vh;
+  }
   .container > *:not(.hero) {
     min-height: -moz-max-content;
     min-height: max-content;
