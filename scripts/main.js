@@ -22,7 +22,7 @@ const data = {
   VPS: 'Санька',
   VPZ: 'Женя',
 
-  KA: 'Аня',
+  VA: 'Альбіна',
   KO: 'дядько Саша',
   KBD: 'Бабуся та Дідусь'
 }
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     '.invitation__description'
   )
 
-  if (['KS', 'KA', 'VN', 'KAL', 'KT'].indexOf(name) !== -1) {
+  if (['KS', 'VA', 'VN', 'KAL', 'KT'].indexOf(name) !== -1) {
     invitationSubtitle.innerText = 'Дорога'
   } else if (
     ['KO', 'VV', 'VS', 'VD', 'KBA', 'VPS', 'VPZ'].indexOf(name) !== -1
@@ -59,7 +59,9 @@ document.addEventListener('DOMContentLoaded', function () {
       'Урочисто запрошуємо на наше весілля у якості свідка, дружби, шафера та товаришом молодого!'
   }
 
-  if (['KS', 'KBA', 'VV', 'VPS', 'VPZ', 'KAL', 'VS'].indexOf(name) !== -1) {
+  if (
+    ['KS', 'KBA', 'VV', 'VPS', 'VPZ', 'KAL', 'VS', 'VA'].indexOf(name) !== -1
+  ) {
     invitationPronouns.forEach(pronoun => {
       pronoun.textContent = 'тебе'
     })
