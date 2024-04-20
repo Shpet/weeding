@@ -1,4 +1,5 @@
 import { countdown } from './countdown.js'
+import { removeHeroAnimation } from './removeHeroAnimation.js'
 import { setTableTexts } from './setTableTexts.js'
 
 const data = {
@@ -71,4 +72,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   setTableTexts(name)
   countdown()
+
+  const container = document.querySelector('.container')
+  if (container) {
+    container.addEventListener(
+      'scroll',
+      () => {
+        removeHeroAnimation()
+      },
+      { once: true }
+    )
+  }
 })

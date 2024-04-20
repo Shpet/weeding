@@ -120,10 +120,26 @@ p {
   }
 }
 
+@keyframes twitchAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}
 .hero {
   position: relative;
   height: 100%;
   background: #000;
+}
+.hero.animated {
+  animation-duration: 0.7s;
+  animation-name: twitchAnimation;
+  animation-timing-function: ease;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 .hero__image {
   -o-object-fit: cover;
@@ -368,6 +384,7 @@ p {
 .tables__table--weeding {
   grid-column-start: 5;
   grid-column-end: 9;
+  font-size: 16px;
 }
 .tables__table--one {
   grid-column-start: 3;
