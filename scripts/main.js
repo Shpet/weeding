@@ -13,6 +13,7 @@ const data = {
   VH1: 'Хрещена та Хрещений',
   KT: 'тітко Ольга',
   VP: 'Світлана та Франц',
+  KL: 'Олеся Іванівна',
 
   VN: "сім'я Носенко",
   KD: 'Дівки',
@@ -22,6 +23,8 @@ const data = {
   KBA: 'Андрій',
   VPS: 'Санька',
   VPZ: 'Женя',
+  OB: 'Дмитро',
+  OG: 'Геннадій',
 
   VA: 'Альбіна',
   KO: 'дядько Саша',
@@ -39,11 +42,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const invitationDescription = document.querySelector(
     '.invitation__description'
   )
+  const tablesSubtitle = document.querySelector('.tables__subtitle')
 
-  if (['KS', 'VA', 'VN', 'KAL', 'KT'].indexOf(name) !== -1) {
+  if (['KS', 'VA', 'VN', 'KAL', 'KT', 'KL'].indexOf(name) !== -1) {
     invitationSubtitle.innerText = 'Дорога'
   } else if (
-    ['KO', 'VV', 'VS', 'VD', 'KBA', 'VPS', 'VPZ'].indexOf(name) !== -1
+    ['KO', 'VV', 'VS', 'VD', 'KBA', 'VPS', 'VPZ', 'OG', 'OB'].indexOf(name) !==
+    -1
   ) {
     invitationSubtitle.innerText = 'Дорогий'
   } else {
@@ -61,11 +66,14 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (
-    ['KS', 'KBA', 'VV', 'VPS', 'VPZ', 'KAL', 'VS', 'VA'].indexOf(name) !== -1
+    ['KS', 'KBA', 'VV', 'VPS', 'VPZ', 'KAL', 'VS', 'VA', 'OG', 'OB'].indexOf(
+      name
+    ) !== -1
   ) {
     invitationPronouns.forEach(pronoun => {
       pronoun.textContent = 'тебе'
     })
+    tablesSubtitle.textContent = 'Твоє місце'
   }
 
   invitationTitle.innerText = data[name] || 'Гості'
