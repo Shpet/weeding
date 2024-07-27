@@ -4,7 +4,7 @@ import { setTableTexts } from './setTableTexts.js'
 
 const data = {
   KAL: 'Алла',
-  VS: 'Сергій',
+  VPS: 'Санька',
 
   KB: 'Батьки нареченої',
   VB: 'Батьки нареченого',
@@ -21,7 +21,7 @@ const data = {
   VV: 'Вадим',
   KS: 'Сестричка',
   KBA: 'Андрій',
-  VPS: 'Санька',
+  VS: 'Сергій і Альона',
   VPZ: 'Женя',
   OB: 'Дмитро',
   OG: 'Геннадій',
@@ -47,8 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (['KS', 'VA', 'VN', 'KAL', 'KT', 'KL'].indexOf(name) !== -1) {
     invitationSubtitle.innerText = 'Дорога'
   } else if (
-    ['KO', 'VV', 'VS', 'VD', 'KBA', 'VPS', 'VPZ', 'OG', 'OB'].indexOf(name) !==
-    -1
+    ['KO', 'VV', 'VD', 'KBA', 'VPS', 'VPZ', 'OG', 'OB'].indexOf(name) !== -1
   ) {
     invitationSubtitle.innerText = 'Дорогий'
   } else {
@@ -60,15 +59,14 @@ document.addEventListener('DOMContentLoaded', function () {
       'Урочисто запрошуємо на наше весілля у якості дружки!'
   }
 
-  if (name === 'VS') {
+  if (name === 'VPS') {
     invitationDescription.innerText =
       'Урочисто запрошуємо на наше весілля у якості свідка, дружби, шафера та товаришом молодого!'
   }
 
   if (
-    ['KS', 'KBA', 'VV', 'VPS', 'VPZ', 'KAL', 'VS', 'VA', 'OG', 'OB'].indexOf(
-      name
-    ) !== -1
+    ['KS', 'KBA', 'VV', 'VPS', 'VPZ', 'KAL', 'VA', 'OG', 'OB'].indexOf(name) !==
+    -1
   ) {
     invitationPronouns.forEach(pronoun => {
       pronoun.textContent = 'тебе'

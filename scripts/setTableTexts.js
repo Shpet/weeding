@@ -5,7 +5,7 @@ export function setTableTexts(name) {
   const tableOne = document.querySelector('.tables__table--one')
   const tableTwo = document.querySelector('.tables__table--two')
 
-  if (['KAL', 'VS'].indexOf(name) !== -1) {
+  if (['KAL', 'VPS'].indexOf(name) !== -1) {
     tableTitle.innerText = 'За столом молодят'
     tableWeeding.classList.add('tables__table--active')
     tableText.innerText = ''
