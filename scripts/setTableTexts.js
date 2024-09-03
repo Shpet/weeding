@@ -13,7 +13,10 @@ export function setTableTexts(name) {
     return
   }
 
-  if (['KB', 'VB', 'VD', 'VH', 'VH1', 'KT', 'VP', 'KL'].indexOf(name) !== -1) {
+  if (
+    ['KB', 'VB', 'VD', 'VH', 'VH1', 'VPZ', 'KT', 'VP', 'KL'].indexOf(name) !==
+    -1
+  ) {
     tableTitle.innerText = 'За столом №1'
     tableOne.classList.add('tables__table--active')
 
