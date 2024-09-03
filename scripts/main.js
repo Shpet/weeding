@@ -22,7 +22,7 @@ const data = {
   KS: 'Сестричка',
   KBA: 'Андрій',
   VS: 'Сергій і Альона',
-  VPZ: 'Женя',
+  VPZ: 'Женя і Юля',
   OB: 'Дмитро',
   OG: 'Геннадій',
 
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (['KS', 'VA', 'VN', 'KAL', 'KT', 'KL'].indexOf(name) !== -1) {
     invitationSubtitle.innerText = 'Дорога'
   } else if (
-    ['KO', 'VV', 'VD', 'KBA', 'VPS', 'VPZ', 'OG', 'OB'].indexOf(name) !== -1
+    ['KO', 'VV', 'VD', 'KBA', 'VPS', 'OG', 'OB'].indexOf(name) !== -1
   ) {
     invitationSubtitle.innerText = 'Дорогий'
   } else {
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (
-    ['KS', 'KBA', 'VV', 'VPS', 'VPZ', 'KAL', 'VA', 'OG', 'OB'].indexOf(name) !==
+    ['KS', 'KBA', 'VV', 'VPS', 'KAL', 'VA', 'OG', 'OB'].indexOf(name) !==
     -1
   ) {
     invitationPronouns.forEach(pronoun => {
