@@ -14,15 +14,14 @@ export function setTableTexts(name) {
   }
 
   if (
-    ['KB', 'VB', 'VD', 'VH', 'VH1', 'VPZ', 'KT', 'VP', 'KL'].indexOf(name) !==
-    -1
+    ['KB', 'VB', 'VD', 'VH', 'VH1', 'KT', 'VP', 'KL', 'VT'].indexOf(name) !== -1
   ) {
-    tableTitle.innerText = 'За столом №1'
-    tableOne.classList.add('tables__table--active')
+    tableTitle.innerText = 'За столом №2'
+    tableTwo.classList.add('tables__table--active')
 
     return
   }
 
-  tableTitle.innerText = 'За столом #2'
-  tableTwo.classList.add('tables__table--active')
+  tableTitle.innerText = 'За столом #1'
+  tableOne.classList.add('tables__table--active')
 }

@@ -25,6 +25,7 @@ const data = {
   VPZ: 'Женя і Юля',
   OB: 'Дмитро',
   OG: 'Геннадій',
+  VT: 'Анатолій та Олена',
 
   VA: 'Альбіна',
   KO: 'дядько Саша',
@@ -65,8 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   if (
-    ['KS', 'KBA', 'VV', 'VPS', 'KAL', 'VA', 'OG', 'OB'].indexOf(name) !==
-    -1
+    ['KS', 'KBA', 'VV', 'VPS', 'KAL', 'VA', 'OG', 'OB'].indexOf(name) !== -1
   ) {
     invitationPronouns.forEach(pronoun => {
       pronoun.textContent = 'тебе'
